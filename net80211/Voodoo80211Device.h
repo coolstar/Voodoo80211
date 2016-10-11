@@ -32,9 +32,9 @@ enum { DVACT_SUSPEND, DVACT_RESUME };
 #include "ieee80211_amrr.h"
 #include "VoodooTimeout.h"
 
-#include "apple80211/Lion/IO80211Controller.h"
-#include "apple80211/Lion/IO80211Interface.h"
-#include "apple80211/Lion/IO80211WorkLoop.h"
+#include "apple80211/Mavericks/IO80211Controller.h"
+#include "apple80211/Mavericks/IO80211Interface.h"
+#include "apple80211/Mavericks/IO80211WorkLoop.h"
 
 #include "compat.h"
 

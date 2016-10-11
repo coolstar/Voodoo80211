@@ -73,6 +73,12 @@
 		1FDBAAF314DF12020010697E /* ieee80211_amrr.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FDBAAF214DF12010010697E /* ieee80211_amrr.h */; };
 		1FDBAAF514DF12320010697E /* ieee80211_amrr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FDBAAF414DF12310010697E /* ieee80211_amrr.cpp */; };
 		1FDBAAF714DF2D6B0010697E /* compat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FDBAAF614DF2D6A0010697E /* compat.cpp */; };
+		F1B5621F1DACC99300CF5C6E /* apple80211_ioctl.h in Headers */ = {isa = PBXBuildFile; fileRef = F1B562191DACC99300CF5C6E /* apple80211_ioctl.h */; };
+		F1B562201DACC99300CF5C6E /* apple80211_var.h in Headers */ = {isa = PBXBuildFile; fileRef = F1B5621A1DACC99300CF5C6E /* apple80211_var.h */; };
+		F1B562211DACC99300CF5C6E /* apple80211_wps.h in Headers */ = {isa = PBXBuildFile; fileRef = F1B5621B1DACC99300CF5C6E /* apple80211_wps.h */; };
+		F1B562221DACC99300CF5C6E /* IO80211Controller.h in Headers */ = {isa = PBXBuildFile; fileRef = F1B5621C1DACC99300CF5C6E /* IO80211Controller.h */; };
+		F1B562231DACC99300CF5C6E /* IO80211Interface.h in Headers */ = {isa = PBXBuildFile; fileRef = F1B5621D1DACC99300CF5C6E /* IO80211Interface.h */; };
+		F1B562241DACC99300CF5C6E /* IO80211WorkLoop.h in Headers */ = {isa = PBXBuildFile; fileRef = F1B5621E1DACC99300CF5C6E /* IO80211WorkLoop.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -146,6 +152,12 @@
 		1FDBAAF214DF12010010697E /* ieee80211_amrr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ieee80211_amrr.h; sourceTree = "<group>"; };
 		1FDBAAF414DF12310010697E /* ieee80211_amrr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ieee80211_amrr.cpp; sourceTree = "<group>"; };
 		1FDBAAF614DF2D6A0010697E /* compat.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compat.cpp; sourceTree = "<group>"; };
+		F1B562191DACC99300CF5C6E /* apple80211_ioctl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = apple80211_ioctl.h; path = Mavericks/apple80211_ioctl.h; sourceTree = "<group>"; };
+		F1B5621A1DACC99300CF5C6E /* apple80211_var.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = apple80211_var.h; path = Mavericks/apple80211_var.h; sourceTree = "<group>"; };
+		F1B5621B1DACC99300CF5C6E /* apple80211_wps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = apple80211_wps.h; path = Mavericks/apple80211_wps.h; sourceTree = "<group>"; };
+		F1B5621C1DACC99300CF5C6E /* IO80211Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IO80211Controller.h; path = Mavericks/IO80211Controller.h; sourceTree = "<group>"; };
+		F1B5621D1DACC99300CF5C6E /* IO80211Interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IO80211Interface.h; path = Mavericks/IO80211Interface.h; sourceTree = "<group>"; };
+		F1B5621E1DACC99300CF5C6E /* IO80211WorkLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IO80211WorkLoop.h; path = Mavericks/IO80211WorkLoop.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +284,7 @@
 		1FDB514A14CBA53000C16F95 /* apple80211 */ = {
 			isa = PBXGroup;
 			children = (
+				F1B562181DACC97500CF5C6E /* Mavericks */,
 				1FDBAA5314DC36A40010697E /* Lion */,
 				1FDB514B14CBA53000C16F95 /* Leopard */,
 				1FDB515214CBA53000C16F95 /* SL */,
@@ -331,6 +344,19 @@
 			path = wpi;
 			sourceTree = "<group>";
 		};
+		F1B562181DACC97500CF5C6E /* Mavericks */ = {
+			isa = PBXGroup;
+			children = (
+				F1B562191DACC99300CF5C6E /* apple80211_ioctl.h */,
+				F1B5621A1DACC99300CF5C6E /* apple80211_var.h */,
+				F1B5621B1DACC99300CF5C6E /* apple80211_wps.h */,
+				F1B5621C1DACC99300CF5C6E /* IO80211Controller.h */,
+				F1B5621D1DACC99300CF5C6E /* IO80211Interface.h */,
+				F1B5621E1DACC99300CF5C6E /* IO80211WorkLoop.h */,
+			);
+			name = Mavericks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -339,12 +365,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F0A494D149FFCB900CDC173 /* Voodoo80211Device.h in Headers */,
+				F1B562221DACC99300CF5C6E /* IO80211Controller.h in Headers */,
 				1F0A495C14A02B4100CDC173 /* ieee80211_priv.h in Headers */,
 				1F0A495D14A02B4100CDC173 /* ieee80211_var.h in Headers */,
+				F1B5621F1DACC99300CF5C6E /* apple80211_ioctl.h in Headers */,
 				1F0A495F14A0C22D00CDC173 /* ieee80211.h in Headers */,
 				1FDB50D614C9007F00C16F95 /* ieee80211_crypto.h in Headers */,
 				1FDB510B14C9C97F00C16F95 /* ieee80211_node.h in Headers */,
 				1FDB510F14CA2DAA00C16F95 /* ieee80211_proto.h in Headers */,
+				F1B562201DACC99300CF5C6E /* apple80211_var.h in Headers */,
 				1FDB512514CA3D0D00C16F95 /* arc4.h in Headers */,
 				1FDB512714CA3D0D00C16F95 /* cmac.h in Headers */,
 				1FDB512914CA3D0D00C16F95 /* hmac.h in Headers */,
@@ -362,6 +391,7 @@
 				1FDB515A14CBA53000C16F95 /* apple80211_var.h in Headers */,
 				1FDB515B14CBA53000C16F95 /* apple80211_wps.h in Headers */,
 				1FDB515C14CBA53000C16F95 /* IO80211Controller.h in Headers */,
+				F1B562231DACC99300CF5C6E /* IO80211Interface.h in Headers */,
 				1FDB515D14CBA53000C16F95 /* IO80211Interface.h in Headers */,
 				1FDB515E14CBA53000C16F95 /* IO80211WorkLoop.h in Headers */,
 				1FDB515F14CBA53000C16F95 /* apple80211_ioctl.h in Headers */,
@@ -378,7 +408,9 @@
 				1FDBAA5F14DC36A40010697E /* IO80211WorkLoop.h in Headers */,
 				1FDBAAE514DF0C540010697E /* if_wpireg.h in Headers */,
 				1FDBAAE714DF0C810010697E /* VoodooIntel3945.h in Headers */,
+				F1B562241DACC99300CF5C6E /* IO80211WorkLoop.h in Headers */,
 				1FDBAAEB14DF0D660010697E /* if_wpivar.h in Headers */,
+				F1B562211DACC99300CF5C6E /* apple80211_wps.h in Headers */,
 				1FDBAAF114DF0FE70010697E /* compat.h in Headers */,
 				1FDBAAF314DF12020010697E /* ieee80211_amrr.h in Headers */,
 				1FA4954114E3B28000F0B43A /* Firmware.h in Headers */,
